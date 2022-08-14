@@ -6,11 +6,13 @@ function HomePage() {
   return (
     <div>
       <Header />
-      <section style={{
-          marginTop: "100px"
-        }}>
-        <Outlet />
-      </section>
+      <section
+        style={{
+          marginBottom: "50px",
+        }}
+      ></section>
+      Home
+      <Outlet />
     </div>
   );
 }
