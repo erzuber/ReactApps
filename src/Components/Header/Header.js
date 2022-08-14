@@ -1,37 +1,59 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-
+import { Nav, Navbar, NavDropdown, Container } from "react-bootstrap";
+import { NavLink, Outlet } from "react-router-dom";
 
 function Header() {
   return (
-    <Navbar sticky="top" ollapseOnSelect expand="sm" bg="dark" variant="dark">
+    <>
+    <Navbar sticky="top" expand="sm" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="/">App Collections of Z</Navbar.Brand>
+        <Navbar.Brand as={NavLink} to="/">
+          App Collections of Z
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/app1">App1</Nav.Link>
-            <Nav.Link href="/app2">App2</Nav.Link>
+            <Nav.Link as={NavLink} to="/app1" >
+              App1
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/app2">
+              App2
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/app3">
+              App3
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/app4">
+              App4
+            </Nav.Link>
+
             <NavDropdown title="More" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="/app3">App3</NavDropdown.Item>
-              <NavDropdown.Item href="/app4">App4</NavDropdown.Item>
-              <NavDropdown.Item href="/app5">App5</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/app5">
+                App5
+              </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#">
+              <NavDropdown.Item as={NavLink} to="#">
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="/login">Login</Nav.Link>
-            <Nav.Link href="/about">About Us</Nav.Link>
+            <Nav.Link as={NavLink} to="/login">
+              Login
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/about">
+              About Us
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    
+      <section
+        style={{
+          marginBottom: "50px",
+        }}></section>
+    <Outlet />
+    </>
   );
 }
 
