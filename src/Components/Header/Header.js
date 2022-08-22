@@ -1,11 +1,10 @@
 import React from "react";
 import { Nav, Navbar, NavDropdown, Container } from "react-bootstrap";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
-    <>
-    <Navbar sticky="top" expand="sm" bg="dark" variant="dark">
+    <Navbar collapseOnSelect sticky="top" expand="sm" bg="dark" variant="dark">
       <Container>
         <Navbar.Brand as={NavLink} to="/">
           App Collections of Z
@@ -13,7 +12,7 @@ function Header() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link as={NavLink} to="/app1" >
+            <Nav.Link as={NavLink} to="/app1">
               App1
             </Nav.Link>
             <Nav.Link as={NavLink} to="/app2">
@@ -24,6 +23,9 @@ function Header() {
             </Nav.Link>
             <Nav.Link as={NavLink} to="/app4">
               App4
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/app5">
+              App5
             </Nav.Link>
 
             <NavDropdown title="More" id="collasible-nav-dropdown">
@@ -47,13 +49,6 @@ function Header() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    
-      <section
-        style={{
-          marginBottom: "50px",
-        }}></section>
-    <Outlet />
-    </>
   );
 }
 

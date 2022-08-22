@@ -1,0 +1,1 @@
+this app is first app of redux application

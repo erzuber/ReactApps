@@ -1,0 +1,49 @@
+.table {
+  width: 80%;
+  margin: 50px;
+}
+.table,
+th,
+td {
+  border: 1px solid #757575;
+  border-collapse: collapse;
+}
+th,
+td {
+  background-color: #d4d4a2;
+}
+.table tr th {
+
+  color: #707055;
+}
+
+.wd10{
+  width: 10px;
+}
+.wd20{
+  width: 20px;
+}
+.wd30{
+  width: 30px;
+}
+.wd40{
+  width: 40px;
+}
+.wd50{
+  width: 50px;
+}
+.wd60{
+  width: 60px;
+}
+.wd70{
+  width: 70px;
+}
+.wd80{
+  width: 80px;
+}
+.wd90{
+  width: 90px;
+}
+.wd100{
+  width: 100px;
+}
