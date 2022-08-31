@@ -29,8 +29,32 @@ function Header() {
             </Nav.Link>
 
             <NavDropdown title="More" id="collasible-nav-dropdown">
-              <NavDropdown.Item as={NavLink} to="/app5">
-                App5
+              <NavDropdown.Item as={NavLink} to="/app6">
+                App6
+              </NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/app7">
+                App7
+              </NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/app8">
+                App8
+              </NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/app9">
+                App9
+              </NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/app10">
+                App10
+              </NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/app11">
+                App11
+              </NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/app12">
+                App12
+              </NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/app13">
+                App13
+              </NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/app14">
+                App14
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item as={NavLink} to="#">
