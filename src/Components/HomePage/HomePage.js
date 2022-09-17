@@ -112,6 +112,22 @@ function HomePage() {
               <a href="/app12">Link</a>
             </td>
           </tr>
+          <tr>
+            <td>13</td>
+            <td>App13</td>
+            <td>Flexbox Practice (working)</td>
+            <td>
+              <a href="/app13">Link</a>
+            </td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>App14</td>
+            <td>Advanced Redux (with Async codes)</td>
+            <td>
+              <a href="/app14">Link</a>
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>

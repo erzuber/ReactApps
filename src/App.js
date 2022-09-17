@@ -16,8 +16,11 @@ import P9App from "./Components/Pages/Page9/P9App";
 import P10App from "./Components/Pages/Page10/P10App";
 import P11App from "./Components/Pages/Page11/P11App";
 import P12App from "./Components/Pages/Page12/P12App";
+import P13App from "./Components/Pages/Page13/P13App";
+import P14App from "./Components/Pages/Page14/P14App";
 import Layout from "./Layout/Layout";
 import store from "./Components/Pages/Page11/store/store";
+import P14store from "./Components/Pages/Page14/components/Store/ReduxStore";
 // import Header from "./Components/Header/Header";
 
 function App() {
@@ -39,7 +42,9 @@ function App() {
             <Route path="/app10" element={<P10App />} />
             <Route path="/app11" element={<Provider store={store}><P11App /></Provider>} />
             <Route path="/app12" element={<P12App />} />
-            <Route path="/app13" element={<Error />} />
+            <Route path="/app13" element={<P13App />} />
+            <Route path="/app14" element={<Provider store={P14store}><P14App /></Provider>} />
+            <Route path="/app14" element={<Error />} />
           </Route>
         </Routes>
       </BrowserRouter>
